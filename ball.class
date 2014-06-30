@@ -1,13 +1,13 @@
 public class Ball{
 
-private:
+private
 int size;
 int speed;
 int defense;
 int armor;
 Attack at;
 
-  public ball(){
+  public Ball(){
     size = 5;
     speed = 5;
     defense = 5;
