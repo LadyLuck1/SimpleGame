@@ -1,0 +1,26 @@
+public class attack{
+
+private
+  int strength;
+  int age = 0;
+
+attack(Ball b){
+// setting the attacking ball's strength and incremting the age/number of attacks
+    this.strength = b.getSize() * b.getSpeed();
+    this.age++;
+  }
+
+public int getDamage(Ball b){
+//calculating the strength of the attacking ball with the defense of the other ball.
+
+    int k =this.strength - (b.getDefense * b.armour)
+    if k > 0
+      return k;
+    else return 0;
+  }
+
+public void setDamage(Ball b){
+//setting the damage to the ball that was attacked
+  b.defense -= this.getDamage(b);
+  b.armour-= this.age;
+}
