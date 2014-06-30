@@ -1,9 +1,11 @@
-private class Ball{
+public class Ball{
 
+private:
 int size;
 int speed;
 int defense;
 int armor;
+
 
   public ball(){
     size = 5;
